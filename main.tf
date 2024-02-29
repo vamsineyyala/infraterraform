@@ -57,6 +57,6 @@ resource "aws_eip" "myFirstInstance" {
   vpc      = true
   instance = aws_instance.myFirstInstance.id
 tags= {
-    Name = "my_elastic_ip"
+    Name = "vamsi_elastic_ip" # changed to my name 
   }
 }
