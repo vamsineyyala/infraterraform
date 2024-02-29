@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "key_name" { 
     description = " SSH keys to connect to ec2 instance" 
-    default     =  "vamsikey" 
+    default     =  "vamsikey" /*keyvalue is changed */
 }
 
 variable "instance_type" { 
@@ -15,16 +15,16 @@ variable "instance_type" {
 
 variable "security_group" { 
     description = "Name of security group" 
-    default     = "jenkins-sgroup-dec-2021" 
+    default     = "jenkins-sgroup-dec-2024" /*default is changed */
 }
 
 variable "tag_name" { 
     description = "Tag Name of for Ec2 instance" 
-    default     = "vamsi-ec2-instance" 
+    default     = "vamsi-ec2-instance" /* tag value is changed */
 } 
 variable "ami_id" { 
-    description = "AMI for Linux Ec2 instance" 
-    default     = "ami-0e670eb768a5fc3d4" 
+    description = "AMI for Linux Ec2 instance" /*sir gave the ubuntu is changed */
+    default     = "ami-0e670eb768a5fc3d4" /*ami id is changed */
 }
 variable "versioning" {
     type        = bool
